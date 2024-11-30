@@ -1,0 +1,97 @@
+.dashboard-container {
+    padding: 36px 36px;
+    background: white;
+    width: 306px;
+    height: 1198px;
+    gap: 0px;
+    opacity: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    .header{
+        .title{
+          display: flex;
+          gap: 8px;
+
+          h1{
+            font-family: Poppins;
+            font-size: 26px;
+            font-weight: 600;
+            line-height: 39px;
+            letter-spacing: 0.01em;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            
+            span{
+                font-family: Poppins;
+                font-size: 10px;
+                font-weight: 500;
+                line-height: 15px;
+                letter-spacing: -0.01em;
+                text-align: left;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+                color: #838383;
+            }
+          }
+        }
+    }
+    nav {
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 40px;
+
+            a {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                color: #9197B3;
+                text-decoration: none;
+                font-family: Poppins;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 21px;
+                letter-spacing: -0.01em;
+                text-align: left;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+                width: 231px;
+
+                
+            }
+            .nav-item {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 8px 16px; 
+                text-decoration: none; 
+                color: inherit; 
+                transition: background-color 0.3s;
+            }
+            
+            .nav-item .fa-angle-right {
+                margin-left: auto;
+            }
+            
+            .nav-item .nav-icon {
+                margin-right: 8px;
+            }
+            
+            .nav-item.active-link {
+                background-color: #5932EA;
+                color: white;
+                border-radius: 8px;
+            }
+            
+            .nav-item.active-link .fa-angle-right {
+                color: white;
+            }
+            
+        }
+        
+    }
+}
