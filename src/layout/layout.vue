@@ -4,7 +4,7 @@ import Navbar from '../components/navbar.vue'
 
 </script>
 <template>
-  <div>
+  <div class="wrapper">
     <Navbar />
     <main>
       <RouterView v-slot="{ Component }">

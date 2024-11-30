@@ -10,29 +10,29 @@
 
             <nav class="navbar">
                 <ul class="navbar-list">
-                    <router-link to="" class="nav-item" active-class="active-link">
-                        <img src="../../public/navbar/key.svg" class="nav-icon">dashboard
+                    <router-link to="/dashboard" class="nav-item" active-class="active-link">
+                        <img src="../../public/navbar/key.svg" class="nav-icon"><span>dashboard</span>
                         <i class="fa-solid fa-angle-right icon-right"></i>
                     </router-link>
-                    <router-link to="" class="nav-item" active-class="active-link">
-                        <img src="../../public/navbar/3d.svg" class="nav-icon">Product
+                    <router-link to="/product" class="nav-item" active-class="active-link">
+                        <img src="../../public/navbar/3d.svg" class="nav-icon"><span>Product</span>
                         <i class="fa-solid fa-angle-right icon-right"></i>
                     </router-link>
 
-                    <router-link to="" class="nav-item" active-class="active-link">
-                        <img src="../../public/navbar/user.png" class="nav-icon">Customers
+                    <router-link to="/customers" class="nav-item" active-class="active-link">
+                        <img src="../../public/navbar/user.png" class="nav-icon"><span>Customers</span>
                         <i class="fa-solid fa-angle-right icon-right"></i>
                     </router-link>
-                    <router-link to="" class="nav-item" active-class="active-link">
-                        <img src="../../public/navbar/wallet.svg" class="nav-icon">Income
+                    <router-link to="/income" class="nav-item" active-class="active-link">
+                        <img src="../../public/navbar/wallet.svg" class="nav-icon"> <span>Income</span>
                         <i class="fa-solid fa-angle-right icon-right"></i>
                     </router-link>
-                    <router-link to="" class="nav-item" active-class="active-link">
-                        <img src="../../public/navbar/discount.svg" class="nav-icon">na
+                    <router-link to="/na" class="nav-item" active-class="active-link">
+                        <img src="../../public/navbar/discount.svg" class="nav-icon"><span>na</span>
                         <i class="fa-solid fa-angle-right icon-right"></i>
                     </router-link>
-                    <router-link to="" class="nav-item" active-class="active-link">
-                        <img src="../../public/navbar/message.svg" class="nav-icon">Product
+                    <router-link to="/message" class="nav-item" active-class="active-link">
+                        <img src="../../public/navbar/message.svg" class="nav-icon"><span>Product</span>
                         <i class="fa-solid fa-angle-right icon-right"></i>
                     </router-link>
                 </ul>
