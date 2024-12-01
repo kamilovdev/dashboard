@@ -1,22 +1,20 @@
 <template>
     <div class="table-container">
         <table class="custom-table">
-            <thead>
-                <tr>
-                    <th v-for="head in headings" :key="head.key">{{ head.title }}</th>
-                </tr>
-            </thead>
-            
-            <tbody>
-                <tr v-for="row in data" :key="row.id">
-                    <td v-for="head in headings" :key="head.key">
-                        <slot :name="head.key" :data="row"> {{ row[head.key] }}</slot>
-                    </td>
-                </tr>
-                <hr>
-        
-            </tbody>
-        </table>
+      <thead>
+        <tr>
+          <th v-for="head in headings" :key="head.key">{{ head.title }}</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr v-for="row in data" :key="row.id">
+          <td v-for="head in headings" :key="head.key">
+            <slot :name="head.key" :data="row">{{ row[head.key] }}</slot>
+          </td>
+        </tr>
+      </tbody>
+    </table>
     </div>
 </template>
 
@@ -31,4 +29,5 @@
     })
 </script>
 
-<style scoped></style>
+<style scoped>
+</style>

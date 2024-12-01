@@ -9,49 +9,49 @@
 <template>
     <div class="customers-wrapper">
         <div class="info">
-             <span>
+            <span>
                 <h1>Hello Evano 👋🏼,</h1>
-             </span>
-             <span>
+            </span>
+            <span>
                 <input type="search" placeholder="Search">
-             </span>
+            </span>
         </div>
         <div class="total">
-              <div class="total-card">
-                 <span>
+            <div class="total-card">
+                <span>
                     <img src="../../public/customers/person.png" alt="">
-                 </span>
-                 <span class="total-header">
+                </span>
+                <span class="total-header">
                     <p>Total Customers</p>
                     <h1>5,423</h1>
                     <p class="res"> <span>16%</span> this month</p>
-                 </span>
-                 
-              </div>
+                </span>
 
-              <div class="total-card">
-                 <span>
+            </div>
+
+            <div class="total-card">
+                <span>
                     <img src="../../public/customers/person.png" alt="">
-                 </span>
-                 <span class="total-header">
+                </span>
+                <span class="total-header">
                     <p>Members</p>
                     <h1>1,893</h1>
                     <p class="res-red"> <span>1%</span> this month</p>
-                 </span>
-                 
-              </div>
+                </span>
 
-              <div class="total-card">
-                 <span>
+            </div>
+
+            <div class="total-card">
+                <span>
                     <img src="../../public/customers/person.png" alt="">
-                 </span>
-                 <span class="total-header">
+                </span>
+                <span class="total-header">
                     <p>Active Now</p>
                     <h1>189</h1>
                     <p class="res"> <span>16%</span> this month</p>
-                 </span>
-                 
-              </div>
+                </span>
+
+            </div>
         </div>
 
         <div class="main-page">
@@ -72,9 +72,8 @@
 
             <div>
                 <BaseTable :headings="tableHeaders" :data="tableRows">
-                
                     <template #Actions="{ data }">
-                        <button class="status-btn">{{ tableRows.Status }}</button>
+                        <button class="status-btn">Action</button>
                     </template>
                 </BaseTable>
             </div>
@@ -84,8 +83,18 @@
 </template>
 
 <style scoped>
-    button {
-        background: #008767;
+    .status-btn {
+  padding: 10px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
 
-    }
+.active-status {
+  background-color: green;
+}
+
+.inactive-status {
+  background-color: red;
+}
 </style>
