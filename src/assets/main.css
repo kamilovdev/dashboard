@@ -8,7 +8,7 @@
 
 body{
     background: #FAFBFF;
-
+    max-width: 1440px;
 }
 .wrapper{
     display: flex;  
